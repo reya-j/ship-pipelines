@@ -1,0 +1,18 @@
+resources:
+
+  - name: ship_ver
+    type: version
+    seed:
+      versionName: "5.2.3"
+      
+  - name: ship_dh
+    type: integration
+    integration: "docker"
+    
+  - name: bldami_repo
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: shiptest-rc-ow/sample-script
+      branch: master
+         
