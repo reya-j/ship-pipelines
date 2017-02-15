@@ -4,9 +4,9 @@ jobs:
     type: runSh
     steps:
       - IN: ship_ver #version resource hard coded current release version in the resource
-        switch: off
+       # switch: off
       - IN: script_repo #gitrepo resource where we have to execute sh file
-        switch: off
+       # switch: off
       - IN: ship_dh #
       - TASK:
         - script: IN/bldami_repo/gitRepo/imagesPush/pushTags.sh
@@ -15,3 +15,18 @@ jobs:
     on_failure:
       - script: echo 'failed'
       
+  - name: build_test
+    type: runSh
+    steps:
+      - IN: ship_ver #version resource hard coded current release version in the resource
+        #switch: off
+      - IN: script_repo #gitrepo resource where we have to execute sh file
+        #switch: off
+      - IN: ship_dh #
+      - TASK:
+        - script: IN/bldami_repo/gitRepo/nextJob/pre_jobInfo.sh
+    on_success:
+      - script: echo 'succeeded'
+    on_failure:
+      - script: echo 'failed'      
+    
