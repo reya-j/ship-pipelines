@@ -9,7 +9,7 @@ resources:
     type: integration
     integration: "docker"
     
-  - name: bldami_repo
+  - name: script_repo
     type: gitRepo
     integration: github
     pointer:
