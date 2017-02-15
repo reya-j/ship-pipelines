@@ -13,6 +13,6 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: shiptest-rc-me/test-script
+      sourceName: shiptest-rc-me/test_script
       branch: master
          
