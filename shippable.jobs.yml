@@ -5,11 +5,11 @@ jobs:
     steps:
       - IN: ship_ver #version resource hard coded current release version in the resource
        # switch: off
-      - IN: script_repo #gitrepo resource where we have to execute sh file
+      - IN: scriptami_repo #gitrepo resource where we have to execute sh file
        # switch: off
       - IN: ship_dh #
       - TASK:
-        - script: IN/script_repo/gitRepo/imagesPush/pushTags.sh
+        - script: IN/scriptami_repo/gitRepo/imagesPush/pushTags.sh
     on_success:
       - script: echo 'succeeded'
     on_failure:
@@ -23,7 +23,7 @@ jobs:
       - IN: scriptami_repo 
         switch: off
       - TASK:
-        - script: IN/script_repo/gitRepo/nextJob/pre_jobInfo.sh
+        - script: IN/scriptami_repo/gitRepo/nextJob/pre_jobInfo.sh
     on_success:
       - script: echo 'succeeded'
     on_failure:
