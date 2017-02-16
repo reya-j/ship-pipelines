@@ -37,5 +37,5 @@ resources:
     pointer:
       sourceName: "shippabledocker/ship_plv2node"
     seed:
-      versionName: tip
+      versionName: "$SCRIPTBASE_REPO_VERSIONNUMBER"
       
