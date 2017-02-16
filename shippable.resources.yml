@@ -33,9 +33,9 @@ resources:
       
   - name: base_img
     type: image
-    integration: shipDH
+    integration: docker
     pointer:
-      sourceName: "ship_plv2node"
+      sourceName: "shippabledocker/ship_plv2node"
     seed:
       versionName: tip
       
