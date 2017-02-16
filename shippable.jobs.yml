@@ -19,6 +19,7 @@ jobs:
     type: runSh
     steps:
       - IN: push_image_tag
+      - IN: ship_aws
       - IN: script_repo #gitrepo resource where we have to execute sh file
         switch: off
       - TASK:
