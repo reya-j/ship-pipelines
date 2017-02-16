@@ -8,15 +8,34 @@ resources:
   - name: ship_dh
     type: integration
     integration: "docker"
+
+  - name: ship_dh_cli
+    type: cliConfig
+    integration: "docker"
     
   - name: ship_aws
     type: integration
     integration: "ship-aws"
     
-  - name: script_repo
+  - name: scriptami_repo
     type: gitRepo
     integration: github
     pointer:
       sourceName: shiptest-rc-me/test_script
       branch: master
          
+  - name: scriptbase_repo
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: shiptest-rc-me/test_script
+      branch: master
+      
+  - name: base_img
+    type: image
+    integration: shipDH
+    pointer:
+      sourceName: "ship_plv2node"
+    seed:
+      versionName: tip
+      
