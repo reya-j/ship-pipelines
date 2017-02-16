@@ -9,7 +9,7 @@ jobs:
        # switch: off
       - IN: ship_dh #
       - TASK:
-        - script: IN/bldami_repo/gitRepo/imagesPush/pushTags.sh
+        - script: IN/script_repo/gitRepo/imagesPush/pushTags.sh
     on_success:
       - script: echo 'succeeded'
     on_failure:
