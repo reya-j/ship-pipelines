@@ -15,12 +15,12 @@ jobs:
     on_failure:
       - script: echo 'failed'
       
-  - name: build_test
+  - name: build_sh
     type: runSh
     steps:
       - IN: push_image_tag
       - IN: ship_aws
-      - IN: script_repo #gitrepo resource where we have to execute sh file
+      - IN: scriptami_repo 
         switch: off
       - TASK:
         - script: IN/script_repo/gitRepo/nextJob/pre_jobInfo.sh
@@ -29,3 +29,18 @@ jobs:
     on_failure:
       - script: echo 'failed'      
     
+  - name: build_cli
+    type: runCLI
+    steps:
+      - IN: push_image_tag
+      - IN: ship_dh_cli
+      - IN: scriptbase_repo
+       # switch: off
+      - TASK:
+        - script: IN/script_repo/gitRepo/nextJob/pre_jobInfo.sh
+      - OUT: base_img
+    on_success:
+      - script: echo 'succeeded'
+    on_failure:
+      - script: echo 'failed'   
+      
