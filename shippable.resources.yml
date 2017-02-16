@@ -28,7 +28,7 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: shiptest-rc-me/test_script
+      sourceName: shiptest-rc-me/base_repo
       branch: master
       
   - name: base_img
