@@ -37,7 +37,7 @@ jobs:
       - IN: scriptbase_repo
        # switch: off
       - TASK:
-        - script: IN/script_repo/gitRepo/nextJob/pre_jobInfo.sh
+        - script: IN/scriptbase_repo/gitRepo/bldtest.sh
       - OUT: base_img
     on_success:
       - script: echo 'succeeded'
