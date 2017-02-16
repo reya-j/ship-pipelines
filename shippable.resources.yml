@@ -9,6 +9,10 @@ resources:
     type: integration
     integration: "docker"
     
+  - name: ship_aws
+    type: integration
+    integration: "ship-aws"
+    
   - name: script_repo
     type: gitRepo
     integration: github
