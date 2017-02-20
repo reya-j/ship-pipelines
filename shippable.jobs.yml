@@ -8,6 +8,7 @@ jobs:
       - IN: scriptami_repo #gitrepo resource where we have to execute sh file
        # switch: off
       - IN: ship_dh #
+      - IN: test_params
       - TASK:
         - script: IN/scriptami_repo/gitRepo/imagesPush/pushTags.sh
     on_success:
