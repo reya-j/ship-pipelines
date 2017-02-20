@@ -38,4 +38,11 @@ resources:
       sourceName: "shippabledocker/ship_plv2node"
     seed:
       versionName: "echo $BASE_IMG_VERSIONNUMBER"
-      
+ 
+  - name: test_params
+    type: params
+    version:
+      params:
+        TEST: rc
+        #DEV: alpha
+        secure: nmMxIxBH80npCITAlsy+cwIAvvAyXW4R62ZhO5xPzXV/LdndyNPlhhX7tCAdo/ZMs17LZQCYTsYfW8ThCugrTE4arDL148bpSU864WHeQ6BWPNnqFfUNDHcHfQyJhbyTxFXnXjXGRSYmpKu980VxbMUO1KHMdofU6dI5qs1WG5iy7dyNkOmAyxxFWSpr+SKS9SxbtVHqDwTawPLQBGhg98xbL0NNHZ6QEpdXI3KPfmXa1cx3tP4r+EahjICrli5q++4yOkyUaylAPEXWcnxMsq9CjNL9PTYC9M9ASi1IGz3BT5BQWki9Wj6mHuUmnBnCpfEQGTkB0ZbvkxQPBCOnpg==
