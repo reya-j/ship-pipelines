@@ -10,7 +10,7 @@ jobs:
       - IN: ship_dh #
       - IN: test_params
       - TASK:
-        - script: IN/scriptami_repo/gitRepo/imagesPush/pushTags.sh
+        - script: IN/scriptami_repo/gitRepo/imagesPush/pushTags.sh 
       - OUT: test_out_img
     on_success:
       - script: echo 'succeeded'
@@ -40,7 +40,7 @@ jobs:
        # switch: off
       - TASK:
         - script: IN/scriptbase_repo/gitRepo/bldtest.sh
-      - OUT: base_img
+      #- OUT: base_img
     on_success:
       - script: echo 'succeeded'
     on_failure:
