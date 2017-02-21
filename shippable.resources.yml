@@ -31,13 +31,13 @@ resources:
       sourceName: shiptest-rc-me/base_repo
       branch: master
       
-  - name: base_img
+  - name: test_out_img
     type: image
     integration: docker
     pointer:
       sourceName: "shippabledocker/ship_plv2node"
     seed:
-      versionName: "echo $BASE_IMG_VERSIONNUMBER"
+      versionName: "latest"
  
   - name: test_params
     type: params
