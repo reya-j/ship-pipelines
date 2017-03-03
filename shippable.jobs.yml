@@ -8,7 +8,7 @@ jobs:
       - TASK: managed
         bump: major
 
-  - name: push_image_tag
+  - name: push_image_tag1
     type: runSh
     steps:
       - IN: ship_ver #version resource hard coded current release version in the resource
@@ -24,7 +24,19 @@ jobs:
       - script: echo 'succeeded'
     on_failure:
       - script: echo 'failed'
-      
+
+  - name: push_image_tag2
+    type: runSh
+    steps:
+      #- IN: ship_ver #version resource hard coded current release version in the resource
+       # switch: off
+      - IN: scriptami_repo #gitrepo resource where we have to execute sh file
+       # switch: off
+      #- IN: ship_dh #
+      #- IN: test_params
+      - TASK:
+        - script: IN/scriptami_repo/gitRepo/imagesPush/pushTags.sh 
+        
   - name: build_sh
     type: runSh
     steps:
