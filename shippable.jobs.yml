@@ -20,6 +20,7 @@ jobs:
       - TASK:
         - script: IN/scriptami_repo/gitRepo/imagesPush/pushTags.sh 
       - OUT: test_out_img
+      - OUT: test_out_img2
     on_success:
       - script: echo 'succeeded'
     on_failure:
