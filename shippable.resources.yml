@@ -38,6 +38,14 @@ resources:
       sourceName: "shippabledocker/ship_plv2node"
     seed:
       versionName: "latest"
+      
+  - name: test_out_img2
+    type: image
+    integration: docker
+    pointer:
+      sourceName: "shippabledocker/ship_plv2node"
+    seed:
+      versionName: "latest"
  
   - name: test_params
     type: params
