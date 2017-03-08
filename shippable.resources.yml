@@ -72,4 +72,5 @@ resources:
   - name: ddc_dopts
     type: dockerOptions
     version:
-      memory: 128
+      memory: 100
+      
