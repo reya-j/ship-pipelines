@@ -66,4 +66,17 @@ jobs:
       - script: echo 'succeeded'
     on_failure:
       - script: echo 'failed'   
+
+  - name: manifest_dep
+    type: manifest
+    steps:
+      - IN: deploy_img       
+      
+  - name: deploy_ddc
+    type: deploy
+    steps:
+      - IN: manifest_dep
+      - IN: ddc_cluster
+      - IN: ddc_dopts
+      - TASK: managed
       
