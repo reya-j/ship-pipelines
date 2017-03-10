@@ -17,11 +17,12 @@ jobs:
        # switch: off
       - IN: ship_dh #
       - IN: test_params
-      - IN: test_out_img2
+      - IN: manifest_dep2
       - TASK:
         - script: IN/scriptami_repo/gitRepo/imagesPush/pushTags.sh 
       - OUT: test_out_img
       - OUT: test_out_img2
+      - OUT: deploy_img2
     on_success:
       - script: echo 'succeeded'
     on_failure:
