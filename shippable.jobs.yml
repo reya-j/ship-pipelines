@@ -8,7 +8,7 @@ jobs:
       - TASK: managed
         bump: major
 
-  - name: push_image_tag
+  - name: push_image_tag2
     type: runSh
     steps:
       - IN: ship_ver #version resource hard coded current release version in the resource
