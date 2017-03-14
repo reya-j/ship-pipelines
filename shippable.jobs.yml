@@ -17,6 +17,7 @@ jobs:
        # switch: off
       - IN: ship_dh 
       - IN: test_params
+      - IN: manifest_dep3
       - TASK:
         - script: IN/scriptami_repo/gitRepo/imagesPush/pushTags.sh 
       - OUT: test_out_img
