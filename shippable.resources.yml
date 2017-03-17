@@ -3,7 +3,7 @@ resources:
   - name: ship_ver
     type: version
     seed:
-      versionName: "5.2.3"
+      versionName: "5.3.2"
       
   - name: ship_dh
     type: integration
@@ -30,6 +30,13 @@ resources:
     pointer:
       sourceName: shiptest-rc-me/base_repo
       branch: master
+
+  - name: branch-invalidbranch
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: shiptest-rc-me/base_repo
+      branch: mas
       
   - name: test_out_img
     type: image
@@ -45,8 +52,7 @@ resources:
     pointer:
       sourceName: "shippabledocker/ship_plv2node"
     seed:
-      versionName: "latest"
-      
+      versionName: "latest"   
 
  
   - name: test_params
