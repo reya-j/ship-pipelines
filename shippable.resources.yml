@@ -44,7 +44,7 @@ resources:
     pointer:
       sourceName: "shippabledocker/ship_plv2node"
     seed:
-      versionName: "latest"
+      versionName: "master"
       
   - name: test_out_img2
     type: image
