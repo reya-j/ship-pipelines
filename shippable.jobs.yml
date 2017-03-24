@@ -81,8 +81,16 @@ jobs:
       - IN: ddc_dopts
       - TASK: managed
       
- # - name: manifest_dep3
- #   type: manifest
- #   steps:
- #     - IN: deploy_img2
-      
+  - name: manifest_dep3
+    type: manifest
+    steps:
+      - IN: test-trigger
+   
+  - name: build_cli
+    type: runCLI
+    steps:
+      - IN: test-trigger
+      - IN: scriptbase_repo
+       # switch: off
+      - TASK:
+        - script: IN/scriptbase_repo/gitRepo/bldtest.sh
