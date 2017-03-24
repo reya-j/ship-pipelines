@@ -97,7 +97,7 @@ resources:
   - name: test-trigger1hour
     type: time
     seed:
-      interval: "*1 * * * *"
+      interval: "1 * * * *"
       
   - name: test-trigger8mins
     type: time
