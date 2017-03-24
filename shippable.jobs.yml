@@ -86,7 +86,7 @@ jobs:
     steps:
       - IN: test-trigger
    
-  - name: build_cli
+  - name: build_cliTime
     type: runCLI
     steps:
       - IN: test-trigger
