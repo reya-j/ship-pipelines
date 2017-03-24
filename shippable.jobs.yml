@@ -37,7 +37,7 @@ jobs:
       - IN: ship_dh #
       - IN: test_params
       - TASK:
-        - script: IN/scriptami_repo/gitRepo/imagesPush/pushTags.sh 
+        - script: IN/scriptami_repo/gitRepo/imagesPush/oldPushTags.sh
         
   - name: build_sh
     type: runSh
