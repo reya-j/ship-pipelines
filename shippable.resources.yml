@@ -93,3 +93,19 @@ resources:
     type: dockerOptions
     version:
       memory: 128      
+
+  - name: test-trigger1hour
+    type: time
+    seed:
+      interval: "*1 * * * *"
+      
+  - name: test-trigger8mins
+    type: time
+    seed:
+      interval: "*/8 * * * *"
+  
+  - name: test-trigger1day
+    type: time
+    seed:
+      interval: "1 0 * * *"
+  
