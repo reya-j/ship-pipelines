@@ -57,7 +57,7 @@ resources:
   - name: test-trigger
     type: time
     seed:
-      interval: "*/4 * * * *"
+      interval: "*/9 * * * *"
  
   - name: test_params
     type: params
@@ -107,5 +107,4 @@ resources:
   - name: test-trigger1day
     type: time
     seed:
-      interval: "1 0 * * *"
-  
+      interval: "1 0 * * *"  
