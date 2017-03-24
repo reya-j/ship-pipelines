@@ -53,7 +53,11 @@ resources:
       sourceName: "shippabledocker/ship_plv2node"
     seed:
       versionName: "latest"   
-
+  
+  - name: test-trigger
+    type: time
+    seed:
+      interval: "*/4 * * * *"
  
   - name: test_params
     type: params
@@ -88,5 +92,4 @@ resources:
   - name: ddc_dopts
     type: dockerOptions
     version:
-      memory: 128
-      
+      memory: 128      
