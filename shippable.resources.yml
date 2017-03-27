@@ -108,3 +108,8 @@ resources:
     type: time
     seed:
       interval: "1 0 * * *"  
+
+  - name: extdopttp-dopts1
+    type: dockerOptions
+    version:
+      memory: 128
