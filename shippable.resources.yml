@@ -19,7 +19,7 @@ resources:
   
   - name: awsiam_cluster
     type: cluster
-    integration: plv2-ecs
+    integration: "ship-aws_iam"
     pointer:
       sourceName : "test"
       region: "us-east-1"
