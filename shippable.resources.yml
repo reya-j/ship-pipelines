@@ -1,7 +1,7 @@
 resources:
 
   - name: ship_ver
-    type: version123
+    type: version
     seed:
       versionName: "5.3.2"
       
