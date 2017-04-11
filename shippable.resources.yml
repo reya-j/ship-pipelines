@@ -120,3 +120,11 @@ resources:
     type: dockerOptions
     version:
       memory: 64
+
+  - name: test_out_img2
+    type: image
+    integration: docker
+    pointer:
+      sourceName: "shippabledocker/ship_plv2node"
+    seed:
+      versionName: "latest123"
