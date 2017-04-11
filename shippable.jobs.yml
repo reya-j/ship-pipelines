@@ -9,11 +9,10 @@ jobs:
         - script: IN/scriptami_repo/gitRepo/imagesPush/pushTags.sh 
         - script: IN/scriptami_repo/gitRepo/bldtest.sh      
 
- # - name: push_image_tag1
- #   type: runSh
- #   steps:
+  - name: push_image_tag1
+    type: runSh
+    steps:
      # - IN: ship_ver 
- #     - IN: scriptami_repo
- #     - TASK:
- #       - script: IN/scriptami_repo/gitRepo/bldtest.sh
-   
+      - IN: scriptami_repo
+      - TASK:
+        - script: IN/scriptami_repo/gitRepo/bldtest.sh   
