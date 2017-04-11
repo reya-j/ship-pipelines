@@ -13,3 +13,10 @@ resources:
       sourceName: shiptest-rc-me/base_repo
       branch: master
   
+  - name: testimg
+    type: image
+    integration: docker
+    pointer:
+      sourceName: shippabledocker/sample_node    
+    seed:
+      versionName: latest
