@@ -38,7 +38,7 @@ resources:
       sourceName: shiptest-rc-me/base_repo
       branch: master
   
-  - name: scriptbase_repo
+  - name: test-fork
     type: gitRepo
     integration: github
     pointer:
