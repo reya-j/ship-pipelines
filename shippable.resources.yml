@@ -37,7 +37,14 @@ resources:
     pointer:
       sourceName: shiptest-rc-me/base_repo
       branch: master
-
+  
+  - name: scriptbase_repo
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: shiptest-rc-me/sample-script-3
+      branch: master
+      
   - name: branch-invalidbranch
     type: gitRepo
     integration: github
