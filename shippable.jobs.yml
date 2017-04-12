@@ -68,6 +68,13 @@ jobs:
     on_failure:
       - script: echo 'failed'   
 
+  - name: test-forkrunsh
+    type: runCLI
+    steps:
+      - IN: test-fork
+      - TASK:
+        - script: IN/test-fork/gitRepo/echo.sh
+        
   - name: manifest_dep
     type: manifest
     steps:
