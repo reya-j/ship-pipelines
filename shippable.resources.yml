@@ -1,22 +1,40 @@
 resources:
-  - name: scriptami_repo
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: shiptest-rc-me/test_script
-      branch: master
+  #- name: scriptami_repo
+  #  type: gitRepo
+  #  integration: github
+  #  pointer:
+  #    sourceName: shiptest-rc-me/test_script
+  #    branch: master
          
-  - name: scriptbase_repo
+  - name: base_repo1
     type: gitRepo
     integration: github
     pointer:
       sourceName: shiptest-rc-me/base_repo
       branch: master
-  
-  - name: testimg
-    type: image
-    integration: docker
+      
+  - name: base_repo2
+    type: gitRepo
+    integration: github
     pointer:
-      sourceName: shippabledocker/sample_node    
-    seed:
-      versionName: latest
+      sourceName: shiptest-rc-me/base_repo
+      branches: 
+        only:
+          - master
+          
+  - name: base_repo3
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: shiptest-rc-me/base_repo
+      tags:                          
+        only:
+          - v1.1tag 
+  
+#  - name: testimg
+#    type: image
+#    integration: docker
+#    pointer:
+#      sourceName: shippabledocker/sample_node    
+#    seed:
+#      versionName: latest
