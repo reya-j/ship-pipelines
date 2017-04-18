@@ -21,3 +21,10 @@ jobs:
       - TASK:
         - script: IN/base_repo3/gitRepo/bldtest.sh 
         
+  - name: runsh4
+    type: runSh
+    steps:
+      - IN: base_repo3
+      - TASK:
+        - script: IN/base_repo3/gitRepo/bldtest.sh 
+        
