@@ -1,18 +1,9 @@
 jobs:
 
-  - name: push_image_tag1
+  - name: runsh1
     type: runSh
     steps:
-      - IN: scriptami_repo
-      - IN: scriptbase_repo
+      - IN: base_repo1
       - TASK:
-        - script: IN/scriptami_repo/gitRepo/imagesPush/pushTags.sh 
-        - script: IN/scriptami_repo/gitRepo/bldtest.sh      
-
-  - name: push_image_tag1
-    type: runSh
-    steps:
-     # - IN: ship_ver 
-      - IN: scriptami_repo
-      - TASK:
-        - script: IN/scriptami_repo/gitRepo/bldtest.sh   
+        - script: IN/base_repo1/gitRepo/bldtest.sh 
+          
