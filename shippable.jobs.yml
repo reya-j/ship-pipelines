@@ -6,4 +6,18 @@ jobs:
       - IN: base_repo1
       - TASK:
         - script: IN/base_repo1/gitRepo/bldtest.sh 
-          
+        
+  - name: runsh2
+    type: runSh
+    steps:
+      - IN: base_repo2
+      - TASK:
+        - script: IN/base_repo2/gitRepo/bldtest.sh        
+
+  - name: runsh3
+    type: runSh
+    steps:
+      - IN: base_repo3
+      - TASK:
+        - script: IN/base_repo3/gitRepo/bldtest.sh 
+        
