@@ -23,7 +23,14 @@ resources:
     pointer:
       sourceName : "test"
       region: "us-east-1"
-
+      
+  - name: ar-ecscluster
+    type: cluster
+    integration: ship-aws
+    pointer:
+      sourceName : #"testCL"
+      region: #"us-west-2"
+      
   - name: scriptami_repo
     type: gitRepo
     integration: github
