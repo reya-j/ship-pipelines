@@ -23,4 +23,7 @@ resources:
       sourceName: shiptest-rc-me/base_repo
       tags:                          
         only:
-          - v1.1tag 
+          - v1.*
+          - y1.*
+      buildOnRelease: true
+      buildOnTagPush: true
