@@ -1,10 +1,4 @@
 resources:
-  #- name: scriptami_repo
-  #  type: gitRepo
-  #  integration: github
-  #  pointer:
-  #    sourceName: shiptest-rc-me/test_script
-  #    branch: master
          
   - name: base_repo1
     type: gitRepo
@@ -30,11 +24,3 @@ resources:
       tags:                          
         only:
           - v1.1tag 
-  
-#  - name: testimg
-#    type: image
-#    integration: docker
-#    pointer:
-#      sourceName: shippabledocker/sample_node    
-#    seed:
-#      versionName: latest
