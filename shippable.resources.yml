@@ -37,6 +37,7 @@ resources:
     pointer:
       sourceName: shiptest-rc-me/test_script
       branch: master
+      buildOnPullRequest: true
          
   - name: scriptbase_repo
     type: gitRepo
