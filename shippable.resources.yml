@@ -97,7 +97,7 @@ resources:
   - name: test-trigger
     type: time
     seed:
-      interval: "*/9 * * * *"
+      interval: "1 * * * *"
  
   - name: test_params
     type: params
