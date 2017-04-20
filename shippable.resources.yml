@@ -39,6 +39,7 @@ resources:
       branches: 
         only:
           - master
+          - onlycommitnopr
         except:
           - tag.*
           - release.*
