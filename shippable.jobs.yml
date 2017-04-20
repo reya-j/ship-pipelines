@@ -14,6 +14,7 @@ jobs:
       - IN: ship_ver #version resource hard coded current release version in the resource
        # switch: off
       - IN: scriptami_repo #gitrepo resource where we have to execute sh file
+        showBuildStatus: true #in order to show build status of this job when triggered from SCM
        # switch: off
       - IN: ship_dh 
       - IN: test_params
