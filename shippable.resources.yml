@@ -36,8 +36,26 @@ resources:
     integration: github
     pointer:
       sourceName: shiptest-rc-me/test_script
-      branch: master
+      branches: 
+        only:
+          - master
+        except:
+          - tag.*
+          - release.*
       buildOnPullRequest: true
+      
+  - name: scriptami_TagsReleases
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: shiptest-rc-me/test_script
+      tags:
+        only:
+          - v1.*   
+        except:
+          - x1.*
+      buildOnTagPush: true
+      buildOnRelease: true   
          
   - name: scriptbase_repo
     type: gitRepo
