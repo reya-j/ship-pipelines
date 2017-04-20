@@ -21,6 +21,7 @@ jobs:
      # - IN: manifest_dep3
       - TASK:
         - script: IN/scriptami_repo/gitRepo/imagesPush/pushTags.sh 
+        - script: testfail
       - OUT: test_out_img
       - OUT: test_out_img2
     on_success:
