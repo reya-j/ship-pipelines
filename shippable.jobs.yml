@@ -69,7 +69,7 @@ jobs:
     on_failure:
       - script: echo 'failed'  
       
- - name: build_cliforTagsNReleases
+  - name: build_cliforTagsNReleases
     type: runCLI
     steps:
       - IN: scriptami_TagsReleases
