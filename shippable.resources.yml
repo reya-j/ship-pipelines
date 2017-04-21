@@ -98,7 +98,7 @@ resources:
   - name: test-trigger
     type: time
     seed:
-      interval: "1 * * * *"
+      interval: "1 */8 * * *" #every 8th hour 1st minute it will post a version
  
   - name: test_params
     type: params
