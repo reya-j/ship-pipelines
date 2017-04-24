@@ -49,7 +49,7 @@ jobs:
         switch: off
       - TASK:
         - script: IN/scriptami_repo/gitRepo/nextJob/pre_jobInfo.sh
-      - OUT: sampleNod_ciRepo
+      #- OUT: sampleNod_ciRepo
     on_success:
       - script: echo 'succeeded'
     on_failure:
@@ -96,6 +96,11 @@ jobs:
       - IN: ddc_cluster
       - IN: ddc_dopts
       - TASK: managed
+  
+  - name: sampleNod_runCI
+    type: runCI
+    steps:
+      - IN: manifest_dep
       
   - name: manifest_dep3
     type: manifest
