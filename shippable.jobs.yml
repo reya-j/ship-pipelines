@@ -4,7 +4,7 @@ jobs:
     type: release
     steps:
       - IN: ship_ver
-      - IN: push_image_tag
+      #- IN: push_image_tag
       - TASK: managed
         bump: major
 
@@ -44,7 +44,7 @@ jobs:
   - name: build_sh
     type: runSh
     steps:
-      - IN: push_image_tag
+    #  - IN: push_image_tag
       - IN: ship_aws
       - IN: scriptami_repo 
         switch: off
@@ -58,7 +58,7 @@ jobs:
   - name: build_cli
     type: runCLI
     steps:
-      - IN: push_image_tag
+     # - IN: push_image_tag
       - IN: ship_dh_cli
       - IN: scriptbase_repo
        # switch: off
