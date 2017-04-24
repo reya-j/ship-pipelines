@@ -17,6 +17,7 @@ jobs:
         showBuildStatus: true #in order to show build status of this job when triggered from SCM
        # switch: off
       - IN: ship_dh 
+      - IN: sampleNod-repo
       - IN: test_params
      # - IN: manifest_dep3
       - TASK:
