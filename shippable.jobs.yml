@@ -70,12 +70,12 @@ jobs:
     on_failure:
       - script: echo 'failed'  
       
-  - name: build_cliforTagsNReleases
-    type: runCLI
-    steps:
-      - IN: scriptami_TagsReleases
-      - TASK:
-        - script: IN/scriptami_TagsReleases/gitRepo/imagesPush/pushTags.sh 
+ # - name: build_cliforTagsNReleases
+   # type: runCLI
+   # steps:
+    #  - IN: scriptami_TagsReleases
+    #  - TASK:
+     #   - script: IN/scriptami_TagsReleases/gitRepo/imagesPush/pushTags.sh 
         
   - name: test-forkrunsh
     type: runCLI
