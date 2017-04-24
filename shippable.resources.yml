@@ -57,7 +57,14 @@ resources:
           - x1.*
       buildOnTagPush: true
       buildOnRelease: true   
-         
+  
+  - name: sampleNod-repo
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: shiptest-rc-me/sampleNod
+      branch: master
+      
   - name: scriptbase_repo
     type: gitRepo
     integration: github
