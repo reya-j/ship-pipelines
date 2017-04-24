@@ -8,11 +8,7 @@ resources:
   - name: ship_dh
     type: integration
     integration: "docker"
- 
-  - name: sampleNod_ciRepo
-    type: ciRepo
-    integration: "github"
-  
+
   - name: ship_dh_cli
     type: cliConfig
     integration: "docker"
