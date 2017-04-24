@@ -97,10 +97,10 @@ jobs:
       - IN: ddc_dopts
       - TASK: managed
   
-  #- name: sampleNod_runCI
-  #  type: runCI
-   # steps:
-    #  - IN: manifest_dep
+  - name: sampleNod_runCI
+    type: runCI
+    steps:
+      - IN: manifest_dep
       
   - name: manifest_dep3
     type: manifest
