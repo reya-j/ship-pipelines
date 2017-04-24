@@ -49,6 +49,7 @@ jobs:
         switch: off
       - TASK:
         - script: IN/scriptami_repo/gitRepo/nextJob/pre_jobInfo.sh
+      - OUT: sampleNod_ciRepo
     on_success:
       - script: echo 'succeeded'
     on_failure:
