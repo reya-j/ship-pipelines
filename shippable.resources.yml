@@ -68,6 +68,8 @@ resources:
           - zep*
       buildOnPullRequest: true
       buildOnCommit: true
+    flags:
+      - "sampleNod-gitrepo"
       
   - name: scriptbase_repo
     type: gitRepo
