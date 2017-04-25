@@ -17,19 +17,26 @@ jobs:
         showBuildStatus: true #in order to show build status of this job when triggered from SCM
        # switch: off
       - IN: ship_dh 
-      - IN: sampleNod-repo
       - IN: test_params
      # - IN: manifest_dep3
       - TASK:
         - script: IN/scriptami_repo/gitRepo/imagesPush/pushTags.sh 
       - OUT: test_out_img
-   #   - OUT: test_out_img2
-      - OUT: sampleNod_ciRepo
+      - OUT: test_out_img2
     on_success:
       - script: echo 'succeeded'
     on_failure:
       - script: echo 'failed'
 
+  - name: runsh-zep
+    type: runSh
+    steps:
+      - IN: sampleNod-repo
+        showBuildStatus: true
+      - TASK:
+        - script: IN/sampleNod-repo/gitRepo/echo.sh 
+      - OUT: sampleNod_ciRepo
+      
  # - name: push_image_tag2
  #   type: runSh
  #   steps:
@@ -98,10 +105,10 @@ jobs:
       - IN: ddc_dopts
       - TASK: managed
   
-  - name: sampleNod_runCI
-    type: runCI
-    steps:
-      - IN: manifest_dep
+  #- name: sampleNod_runCI
+  #  type: runCI
+  #  steps:
+   #   - IN: manifest_dep
       
   - name: manifest_dep3
     type: manifest
