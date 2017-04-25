@@ -63,7 +63,9 @@ resources:
     integration: github
     pointer:
       sourceName: shiptest-rc-me/sampleNod
-      branch: zep
+      branches:
+        only:
+          - zep*
       buildOnPullRequest: true
       buildOnCommit: true
       
