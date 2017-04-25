@@ -69,7 +69,7 @@ resources:
       buildOnPullRequest: true
       buildOnCommit: true
     flags:
-      - "sampleNod-gitrepo"
+      - sampleNod-repo
       
   - name: scriptbase_repo
     type: gitRepo
