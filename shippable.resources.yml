@@ -66,6 +66,8 @@ resources:
       branches:
         only:
           - zep*
+        except:
+          - zep2
       buildOnPullRequest: true
       buildOnCommit: true
     flags:
