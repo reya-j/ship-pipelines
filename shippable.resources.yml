@@ -64,8 +64,8 @@ resources:
     pointer:
       sourceName: shiptest-rc-me/sampleNod
       branch: master
-      buildOnPullRequest: false
-      buildOnCommit: false
+  #    buildOnPullRequest: false
+   #   buildOnCommit: false
       
   - name: scriptbase_repo
     type: gitRepo
