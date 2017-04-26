@@ -67,7 +67,7 @@ jobs:
     type: runCLI
     steps:
      # - IN: push_image_tag
-      - IN: ship_dh_cli
+      - IN: ship_dh_cli1
       - IN: scriptbase_repo
        # switch: off
       - TASK:
