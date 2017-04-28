@@ -39,10 +39,11 @@ resources:
       branches: 
         only:
           - master
-          - onlycommitnopr
-        except:
-          - tag.*
-          - release.*
+          - test
+         # - onlycommitnopr
+      #  except:
+       #   - tag.*
+       #   - release.*
       buildOnPullRequest: true
       
   - name: scriptami_TagsReleases
