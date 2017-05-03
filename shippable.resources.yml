@@ -24,6 +24,10 @@ resources:
       sourceName : "test"
       region: "us-east-1"
       
+  - name: kubernetes_cluster
+    type: cluster
+    integration: "ship-kubernetes"
+    
  # - name: ar-ecscluster
   #  type: cluster
    # integration: ship-aws
@@ -170,7 +174,18 @@ resources:
     type: dockerOptions
     version:
       memory: 64
-
+  
+  - name: kube-dockeropts
+    type: dockerOptions
+    version:
+      memory: 124
+      user: varsha
+      #labels: "bad-label"
+      labels:
+        myKey1: myValue
+        myOtherKey1: myOtherValue
+        mykey2: myvalue3
+        
   #- name: test_out_img2
    # type: image
    # integration: docker
