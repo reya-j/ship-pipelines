@@ -92,7 +92,7 @@ jobs:
       - TASK:
         - script: IN/test-fork/gitRepo/echo.sh
         
-  - name: manifest_dep
+  - name: manifest-dep
     type: manifest
     steps:
       - IN: deploy_img       
@@ -100,7 +100,7 @@ jobs:
   - name: deploy_ddc
     type: deploy
     steps:
-      - IN: manifest_dep
+      - IN: manifest-dep
       - IN: ddc_cluster
       - IN: ddc_dopts
       - TASK: managed
@@ -108,15 +108,15 @@ jobs:
   - name: deploy-kube
     type: deploy
     steps:
-      - IN: manifest_dep
-      - IN: kubernetes_cluster
+      - IN: manifest-dep
+      - IN: kubernetes-cluster
       - IN: kube-dockeropts
      # - TASK: managed
       
   - name: sampleNod_runCI
     type: runCI
     steps:
-      - IN: manifest_dep
+      - IN: manifest-dep
       
   - name: manifest_dep3
     type: manifest
