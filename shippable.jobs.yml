@@ -105,7 +105,7 @@ jobs:
       - IN: ddc_dopts
       - TASK: managed
   
-  - name: deploy_kube
+  - name: deploy-kube
     type: deploy
     steps:
       - IN: manifest_dep
