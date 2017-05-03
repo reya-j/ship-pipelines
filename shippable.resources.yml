@@ -24,7 +24,7 @@ resources:
       sourceName : "test"
       region: "us-east-1"
       
-  - name: kubernetes_cluster
+  - name: kubernetes-cluster
     type: cluster
     integration: "ship-kubernetes"
     
@@ -178,9 +178,7 @@ resources:
   - name: kube-dockeropts
     type: dockerOptions
     version:
-      memory: 124
-      #user: varsha
-      #labels: "bad-label"
+      memory: 64
       labels:
         myKey1: myValue
         myOtherKey1: myOtherValue
