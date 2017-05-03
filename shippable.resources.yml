@@ -179,7 +179,7 @@ resources:
     type: dockerOptions
     version:
       memory: 124
-      user: varsha
+      #user: varsha
       #labels: "bad-label"
       labels:
         myKey1: myValue
