@@ -105,12 +105,12 @@ jobs:
       - IN: ddc_dopts
       - TASK: managed
   
-  - name: deploy-kube
-    type: deploy
-    steps:
-      - IN: manifest-dep
-      - IN: kubernetes-cluster
-      - IN: kube-dockeropts
+ # - name: deploy-kube
+  #  type: deploy
+  #  steps:
+    #  - IN: manifest-dep
+    #  - IN: kubernetes-cluster
+     # - IN: kube-dockeropts
      # - TASK: managed
       
   - name: sampleNod_runCI
