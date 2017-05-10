@@ -7,26 +7,26 @@ resources:
       
   - name: ship_dh
     type: integration
-    integration: "docker"
+    integration: "ship4-docker"
 
   - name: ship_dh_cli1
     type: cliConfig
-    integration: "docker"
+    integration: "ship4-docker"
     
-  - name: ship_aws
-    type: integration
-    integration: "ship-aws"
+ # - name: ship_aws
+#    type: integration
+#    integration: "ship-aws"
   
-  - name: awsiam_cluster
-    type: cluster
-    integration: "ship-aws_iam"
-    pointer:
-      sourceName : "test"
-      region: "us-east-1"
+ # - name: awsiam_cluster
+  #  type: cluster
+  #  integration: "ship-aws_iam"
+  #  pointer:
+   #   sourceName : "test"
+   #   region: "us-east-1"
       
-  - name: kubernetes-cluster
-    type: cluster
-    integration: "ship-kubernetes"
+  #- name: kubernetes-cluster
+   # type: cluster
+   # integration: "ship-kubernetes"
     
  # - name: ar-ecscluster
   #  type: cluster
@@ -89,7 +89,7 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: shiptest-rc-me/sample-script-3
+      sourceName: shiphitchcock4/sample-script-3
       branch: master
       
   - name: branch-invalidbranch
@@ -101,7 +101,7 @@ resources:
       
   - name: test_out_img
     type: image
-    integration: docker
+    integration: shi4-docker
     pointer:
       sourceName: "shippabledocker/ship_plv2node"
     seed:
@@ -109,7 +109,7 @@ resources:
       
   - name: test_out_img2
     type: image
-    integration: docker
+    integration: ship4-dockerdocker
     pointer:
       sourceName: "shippabledocker/ship_plv2node"
     seed:
@@ -126,11 +126,11 @@ resources:
       params:
         TEST: rc
         #DEV: alpha
-        secure: nmMxIxBH80npCITAlsy+cwIAvvAyXW4R62ZhO5xPzXV/LdndyNPlhhX7tCAdo/ZMs17LZQCYTsYfW8ThCugrTE4arDL148bpSU864WHeQ6BWPNnqFfUNDHcHfQyJhbyTxFXnXjXGRSYmpKu980VxbMUO1KHMdofU6dI5qs1WG5iy7dyNkOmAyxxFWSpr+SKS9SxbtVHqDwTawPLQBGhg98xbL0NNHZ6QEpdXI3KPfmXa1cx3tP4r+EahjICrli5q++4yOkyUaylAPEXWcnxMsq9CjNL9PTYC9M9ASi1IGz3BT5BQWki9Wj6mHuUmnBnCpfEQGTkB0ZbvkxQPBCOnpg==
+       # secure: nmMxIxBH80npCITAlsy+cwIAvvAyXW4R62ZhO5xPzXV/LdndyNPlhhX7tCAdo/ZMs17LZQCYTsYfW8ThCugrTE4arDL148bpSU864WHeQ6BWPNnqFfUNDHcHfQyJhbyTxFXnXjXGRSYmpKu980VxbMUO1KHMdofU6dI5qs1WG5iy7dyNkOmAyxxFWSpr+SKS9SxbtVHqDwTawPLQBGhg98xbL0NNHZ6QEpdXI3KPfmXa1cx3tP4r+EahjICrli5q++4yOkyUaylAPEXWcnxMsq9CjNL9PTYC9M9ASi1IGz3BT5BQWki9Wj6mHuUmnBnCpfEQGTkB0ZbvkxQPBCOnpg==
 
   - name: deploy_img
     type: image
-    integration: ship-docker
+    integration: ship4-docker
     pointer:
       sourceName: "shippabledocker/pipelinev2"
     seed:
@@ -138,7 +138,7 @@ resources:
       
   - name: deploy_img2
     type: image
-    integration: ship-docker
+    integration: ship4-docker
     pointer:
       sourceName: "shippabledocker/pipelinev2"
     seed:
