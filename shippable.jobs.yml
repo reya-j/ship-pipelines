@@ -53,7 +53,7 @@ jobs:
     type: runSh
     steps:
     #  - IN: push_image_tag
-      - IN: ship_aws
+      #- IN: ship_aws
       - IN: scriptami_repo 
         switch: off
       - TASK:
