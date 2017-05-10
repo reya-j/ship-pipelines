@@ -128,13 +128,13 @@ jobs:
     steps:
       - IN: deploy_img2
   
-  - name: deploy_awsiam
-    type: deploy
-    steps:
-      - IN: manifest_dep4
-      - IN: awsiam_cluster
-      - IN: awsiam-dopts1
-      - TASK: managed
+#  - name: deploy_awsiam
+ #   type: deploy
+ #   steps:
+  #    - IN: manifest_dep4
+  #    - IN: awsiam_cluster
+  #    - IN: awsiam-dopts1
+  #    - TASK: managed
       
   - name: build_cliTime
     type: runCLI
