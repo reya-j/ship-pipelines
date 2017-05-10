@@ -39,7 +39,7 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: shiptest-rc-me/test_script
+      sourceName: shiphitchcock4/test_script
       branches: 
         only:
           - master
@@ -54,7 +54,7 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: shiptest-rc-me/test_script
+      sourceName: shiphitchcock4/test_script
       tags:
         only:
           - v1.*   
@@ -67,7 +67,7 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: shiptest-rc-me/sampleNod
+      sourceName: shiphitchcock4/sampleNod
       branches:
         only:
           - zep*
@@ -82,7 +82,7 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: shiptest-rc-me/base_repo
+      sourceName: shiphitchcock4/base_repo
       branch: master
   
   - name: test-fork
@@ -96,12 +96,12 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: shiptest-rc-me/base_repo
+      sourceName: shiphitchcock4/base_repo
       branch: mas
       
   - name: test_out_img
     type: image
-    integration: shi4-docker
+    integration: ship4-docker
     pointer:
       sourceName: "shippabledocker/ship_plv2node"
     seed:
@@ -109,7 +109,7 @@ resources:
       
   - name: test_out_img2
     type: image
-    integration: ship4-dockerdocker
+    integration: ship4-docker
     pointer:
       sourceName: "shippabledocker/ship_plv2node"
     seed:
