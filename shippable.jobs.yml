@@ -35,7 +35,7 @@ jobs:
         showBuildStatus: true
       - TASK:
         - script: IN/sampleNod-repo/gitRepo/echo.sh 
-      - OUT: sampleNod_ciRepo
+      - OUT: linkciprepotopipeline
       
  # - name: push_image_tag2
  #   type: runSh
