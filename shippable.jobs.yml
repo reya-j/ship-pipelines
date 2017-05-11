@@ -60,7 +60,7 @@ jobs:
         - script: IN/scriptami_repo/gitRepo/nextJob/pre_jobInfo.sh
     on_success:
       - script: echo 'succeeded'
-    on_failure:
+    on_failure: 
       - script: echo 'failed'      
     
   - name: build_cli
