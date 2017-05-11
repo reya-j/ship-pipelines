@@ -67,7 +67,7 @@ resources:
     type: gitRepo
     integration: github
     pointer:
-      sourceName: shiphitchcock4/sampleNod
+      sourceName: shiphitchcock4/linkciprepotopipeline
       branches:
         only:
           - zep*
