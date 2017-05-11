@@ -70,7 +70,7 @@ resources:
       sourceName: shiphitchcock4/linkciprepotopipeline
       branches:
         only:
-          - zep*
+          - master
         except:
           - zep2
       buildOnPullRequest: true
